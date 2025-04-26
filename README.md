@@ -33,7 +33,10 @@ export default defineConfig({
   ],
 })
 ```
+
 Ademas en nuestra clase css es importante escribir al principio: `@import "tailwindcss";`
+
+
 ---
 
 ## Paso 3: Estructura del Proyecto
