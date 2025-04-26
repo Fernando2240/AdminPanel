@@ -1,12 +1,72 @@
-# React + Vite
+# 🛠️ Creación del Proyecto AdminPanel con React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este documento detalla paso a paso cómo fue creado el proyecto **AdminPanel** utilizando **React** y **Vite**, con integración de **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Paso 1: Inicialización del Proyecto con Vite
 
-## Expanding the ESLint configuration
+El proyecto fue inicializado utilizando **Vite**, una herramienta moderna para proyectos front-end.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm create vite@latest AdminPanel -- --template react
+```
+
+Esto generó una estructura base para una aplicación React.
+
+---
+
+## Paso 2: Integración de Tailwind CSS
+
+_Configuración realizada manualmente aquí._
+
+---
+
+## Paso 3: Estructura del Proyecto
+
+La estructura del proyecto es la estándar generada por Vite, y se ve así:
+
+```
+AdminPanel/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
+```
+
+---
+
+## Paso 4: Instalación de Dependencias
+
+Una vez creado el proyecto, se instalaron las dependencias necesarias:
+
+```bash
+npm install
+```
+
+---
+
+## Paso 5: Ejecución del Proyecto en Modo Desarrollo
+
+Para iniciar el servidor de desarrollo local:
+
+```bash
+npm run dev
+```
+
+Esto lanza la aplicación en `http://localhost:5173/`.
+
+---
+
+## Paso 6: Configuración de ESLint
+
+El proyecto incluye una configuración personalizada de ESLint en `eslint.config.js` para mantener buenas prácticas y calidad de código durante el desarrollo.
