@@ -18,8 +18,21 @@ Esto generó una estructura base para una aplicación React.
 
 ## Paso 2: Integración de Tailwind CSS
 
-_Configuración realizada manualmente aquí._
+[Tailwind Instalation](https://tailwindcss.com/docs/installation/using-vite). Para este paso, gracias a la pagina oficial de tailwind se instaló este framework para estilos, mediante la ejecucion de los comandos: 
 
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
+Luego en vite.config.js importamos nuestra clase tailwindcss asi: 
+```bash
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+```
 ---
 
 ## Paso 3: Estructura del Proyecto
@@ -67,6 +80,8 @@ Esto lanza la aplicación en `http://localhost:5173/`.
 
 ---
 
-## Paso 6: Configuración de ESLint
+## Paso 6: Creacion de Pages
 
-El proyecto incluye una configuración personalizada de ESLint en `eslint.config.js` para mantener buenas prácticas y calidad de código durante el desarrollo.
+Para cada una de las rutas se genero una clase .jsx con el contenido html de cada una de las secciones a las que redirigen nuestras rutas de la barra de navegacion, las cuales fueron estilizadas usando las implementaciones de Tailwind.
+
+
